@@ -83,7 +83,7 @@
         };
 
         Number {
-            display-name = "secondary_layer";
+            display-name = "Number";
             bindings = <
 &kp F1            &kp F2             &kp F3           &kp F4           &kp F5                            &kp F6            &kp F7             &kp F8           &kp F9           &kp F10
 &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                   &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
@@ -96,7 +96,7 @@
         };
 
         Symbol {
-            display-name = "tertiary_layer";
+            display-name = "Symbol";
             bindings = <
 &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &none     &kp TILDE                      &kp INT_YEN    &kp LBRC  &kp RBRC  &none   &kp PERCENT
 &kp AT            &kp SEMICOLON      &kp DOLLAR  &none     &kp HASH                       &none          &kp LPAR  &kp RPAR  &none   &none
@@ -109,7 +109,7 @@
         };
 
         Arrow {
-            display-name = "system_layer";
+            display-name = "Arrow";
             bindings = <
 &kp ESC   &none        &kp UP    &none          &none                       &none   &none       &bt BT_SEL 0  &none          &none
 &kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END                     &none   &kp CAPS    &kp ESC       &none          &none
@@ -131,6 +131,8 @@
 &trans     &trans           &trans                                                                                               &trans    &trans         &trans
 &trans     &trans           &trans           &trans           &trans                                    &trans      &trans       &trans    &trans         &trans
             >;
+
+            label = "Numpad";
         };
 
         System {
@@ -143,6 +145,8 @@
 &trans        &trans        &trans                                                                    &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "System";
         };
     };
 
