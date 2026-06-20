@@ -87,26 +87,26 @@
         Number {
             display-name = "Number";
             bindings = <
-&kp F1            &kp F2             &kp F3           &kp F4           &kp F5                            &kp F6            &kp F7             &kp F8           &kp F9           &kp F10
-&kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                   &kp KP_NUMBER_6   &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&none             &kp EQUAL          &kp KP_PLUS      &kp KP_MINUS     &none                             &none             &kp KP_ASTERISK    &kp KP_SLASH     &kp KP_DOT       &none
-&none             &none              &none            &none            &mo 5            &to 3   &kp DEL  &kp ENTER         &none              &kp RIGHT_SHIFT  &kp RALT         &none
-                  &trans             &trans           &trans           &trans           &trans  &trans   &trans            &trans             &trans           &trans
-&trans            &trans             &trans                                                                                                   &trans           &trans           &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans           &trans                            &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
+&kp F1           &kp F2           &kp F3           &kp F4           &kp F5                            &kp F6           &kp F7           &kp F8           &kp F9           &kp F10
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                   &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&none            &kp EQUAL        &kp KP_PLUS      &kp KP_MINUS     &none                             &none            &kp KP_ASTERISK  &kp KP_SLASH     &kp KP_DOT       &none
+&none            &none            &none            &none            &mo 5            &to 3   &kp DEL  &kp ENTER        &none            &kp RIGHT_SHIFT  &kp RALT         &none
+                 &trans           &trans           &trans           &trans           &trans  &trans   &trans           &trans           &trans           &trans
+&trans           &trans           &trans                                                                                                &trans           &trans           &trans
+&trans           &trans           &trans           &trans           &trans                            &trans           &trans           &trans           &trans           &trans
             >;
         };
 
         Symbol {
             display-name = "Symbol";
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &none     &kp TILDE                      &kp INT_YEN    &kp LBRC  &kp RBRC  &none   &kp PERCENT
-&kp AT            &kp SEMICOLON      &kp DOLLAR  &none     &kp HASH                       &none          &kp LPAR  &kp RPAR  &none   &none
-&none             &none              &kp COLON   &kp PIPE  &kp BACKSLASH                  &kp AMPERSAND  &kp LBKT  &kp RBKT  &none   &none
-&none             &none              &none       &none     &none          &none   &to 4   &none          &none     &none     &none   &none
-                  &trans             &trans      &trans    &trans         &trans  &trans  &trans         &trans    &trans    &trans
-&trans            &trans             &trans                                                                        &trans    &trans  &trans
-&trans            &trans             &trans      &trans    &trans                         &trans         &trans    &trans    &trans  &trans
+&kp SQT  &kp DQT        &kp EXCL    &none     &kp TILDE                      &kp INT_YEN    &kp LBRC  &kp RBRC  &none   &kp PERCENT
+&kp AT   &kp SEMICOLON  &kp DOLLAR  &none     &kp HASH                       &none          &kp LPAR  &kp RPAR  &none   &none
+&none    &none          &kp COLON   &kp PIPE  &kp BACKSLASH                  &kp AMPERSAND  &kp LBKT  &kp RBKT  &none   &none
+&none    &none          &none       &none     &none          &none   &to 4   &none          &none     &none     &none   &none
+         &trans         &trans      &trans    &trans         &trans  &trans  &trans         &trans    &trans    &trans
+&trans   &trans         &trans                                                                        &trans    &trans  &trans
+&trans   &trans         &trans      &trans    &trans                         &trans         &trans    &trans    &trans  &trans
             >;
         };
 
@@ -117,7 +117,7 @@
 &kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END                     &none   &kp CAPS    &kp ESC       &none          &none
 &none     &kp PAGE_UP  &none     &kp PAGE_DOWN  &none                       &none   &kp RSHIFT  &kp RCTRL     &kp RIGHT_ALT  &kp RIGHT_GUI
 &to 0     &none        &none     &kp LEFT_ALT   &kp DEL  &kp ENTER  &none   &none   &kp LANG1   &none         &none          &to 0
-          &trans       &trans    &trans         &trans   &trans     &trans  &trans  &trans      &trans        &trans
+          &to 0        &trans    &trans         &trans   &trans     &trans  &trans  &trans      &trans        &trans
 &trans    &trans       &trans                                                                   &trans        &trans         &trans
 &trans    &trans       &trans    &trans         &trans                      &trans  &trans      &trans        &trans         &trans
             >;
