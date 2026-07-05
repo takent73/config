@@ -54,13 +54,13 @@
         Default {
             display-name = "Default";
             bindings = <
-&kp Q           &kp W           &kp E        &kp R             &kp T                          &kp Y          &kp U             &kp I          &kp O           &kp P
-&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                          &kp H          &mt LEFT_SHIFT J  &mt LCTRL K    &mt LEFT_ALT L  &mt2 LEFT_GUI MINUS
-&kp Z           &kp X           &kp C        &kp V             &kp B                          &kp N          &kp M             &kp COMMA      &kp PERIOD      &kp SLASH
-&kp LCTRL       &kp TAB         &lt 1 DEL    &mo 3             &kp SPACE  &none   &none       &kp BACKSPACE  &lt 2 ENTER       &kp LANG2      &kp LEFT_GUI    &kp ESC
-                &to 3           &kp RIGHT    &kp DOWN          &kp LEFT   &kp UP  &kp LG(UP)  &kp LG(LEFT)   &kp DOWN          &kp LG(RIGHT)  &to 4
-&mkp LCLK       &mkp RCLK       &mkp MCLK                                                                                      &mkp LCLK      &mkp RCLK       &mkp MCLK
-&mkp MB5        &mkp MB4        &kp LG(TAB)  &kp LG(D)         &kp LCTRL                      &mkp MB5       &mkp MB4          &kp LG(TAB)    &kp LG(D)       &kp LCTRL
+&kp Q      &kp W           &kp E        &kp R             &kp T                          &kp Y          &kp U             &kp I          &kp O           &kp P
+&kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                          &kp H          &mt LEFT_SHIFT J  &mt LCTRL K    &mt LEFT_ALT L  &kp MINUS
+&kp Z      &kp X           &kp C        &kp V             &kp B                          &kp N          &kp M             &kp COMMA      &kp PERIOD      &kp SLASH
+&kp LCTRL  &kp TAB         &lt 1 DEL    &mo 3             &kp SPACE  &none   &none       &kp BACKSPACE  &lt 2 ENTER       &kp LANG2      &kp LEFT_GUI    &kp ESC
+           &to 3           &kp RIGHT    &kp DOWN          &kp LEFT   &kp UP  &kp LG(UP)  &kp LG(LEFT)   &kp DOWN          &kp LG(RIGHT)  &to 4
+&mkp LCLK  &mkp RCLK       &mkp MCLK                                                                                      &mkp LCLK      &mkp RCLK       &mkp MCLK
+&mkp MB5   &mkp MB4        &kp LG(TAB)  &kp LG(D)         &kp LCTRL                      &mkp MB5       &mkp MB4          &kp LG(TAB)    &kp LG(D)       &kp LCTRL
             >;
         };
 
@@ -70,7 +70,7 @@
 &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                           &kp F6           &kp F7           &kp F8           &kp F9           &kp F10
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
 &none            &kp EQUAL        &kp KP_PLUS      &kp KP_MINUS     &none                            &none            &kp KP_ASTERISK  &kp KP_SLASH     &kp KP_DOT       &none
-&none            &none            &none            &mo 5            &to 3            &none   &none   &kp DEL          &kp ENTER        &kp LANG1        &kp LEFT_SHIFT   &kp LEFT_ALT
+&none            &kp LSHIFT       &none            &mo 5            &to 3            &none   &none   &kp DEL          &kp ENTER        &kp LANG1        &kp LCTRL        &kp LEFT_ALT
                  &trans           &trans           &trans           &trans           &trans  &trans  &trans           &trans           &trans           &trans
 &trans           &trans           &trans                                                                                               &trans           &trans           &trans
 &trans           &trans           &trans           &trans           &trans                           &trans           &trans           &trans           &trans           &trans
@@ -80,26 +80,26 @@
         Symbol {
             display-name = "Symbol";
             bindings = <
-&kp SQT  &kp DQT        &kp EXCL    &none     &kp TILDE                      &none          &kp LBRC  &kp RBRC  &none   &kp PERCENT
-&kp AT   &kp SEMICOLON  &kp DOLLAR  &none     &kp HASH                       &none          &kp LPAR  &kp RPAR  &none   &none
-&none    &none          &kp COLON   &kp PIPE  &kp BACKSLASH                  &kp AMPERSAND  &kp LBKT  &kp RBKT  &none   &none
-&none    &none          &none       &none     &none          &none   &none   &none          &none     &none     &none   &none
+&kp SQT  &kp DQT        &kp EXCL    &none     &kp TILDE                      &none          &kp LBRC  &kp RBRC  &none      &kp PERCENT
+&kp AT   &kp SEMICOLON  &kp DOLLAR  &none     &kp HASH                       &none          &kp LPAR  &kp RPAR  &none      &none
+&none    &none          &kp COLON   &kp PIPE  &kp BACKSLASH                  &kp AMPERSAND  &kp LBKT  &kp RBKT  &none      &none
+&none    &kp LSHIFT     &none       &none     &none          &none   &none   &none          &none     &none     &kp LCTRL  &kp LALT
          &trans         &trans      &trans    &trans         &trans  &trans  &trans         &trans    &trans    &trans
-&trans   &trans         &trans                                                                        &trans    &trans  &trans
-&trans   &trans         &trans      &trans    &trans                         &trans         &trans    &trans    &trans  &trans
+&trans   &trans         &trans                                                                        &trans    &trans     &trans
+&trans   &trans         &trans      &trans    &trans                         &trans         &trans    &trans    &trans     &trans
             >;
         };
 
         Arrow {
             display-name = "Arrow";
             bindings = <
-&kp ESC   &none        &kp UP    &none          &none                       &none   &kp CAPS    &bt BT_SEL 0  &none         &none
-&kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END                     &none   &kp LSHIFT  &kp LCTRL     &kp LEFT_ALT  &kp LEFT_GUI
-&none     &kp PAGE_UP  &none     &kp PAGE_DOWN  &none                       &none   &none       &none         &none         &none
-&to 0     &none        &none     &kp LEFT_ALT   &kp DEL  &kp ENTER  &none   &none   &kp LANG1   &none         &none         &to 0
-          &to 0        &trans    &trans         &trans   &trans     &trans  &trans  &trans      &trans        &to 0
-&trans    &trans       &trans                                                                   &trans        &trans        &trans
-&trans    &trans       &trans    &trans         &trans                      &trans  &trans      &trans        &trans        &trans
+&kp ESC   &none        &kp UP    &none          &none                       &none   &kp CAPS    &none      &none         &none
+&kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END                     &none   &kp LSHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
+&none     &kp PAGE_UP  &none     &kp PAGE_DOWN  &none                       &none   &none       &none      &none         &none
+&none     &none        &none     &kp LEFT_ALT   &kp DEL  &kp ENTER  &none   &none   &none       &kp LANG1  &none         &none
+          &to 0        &trans    &trans         &trans   &trans     &trans  &trans  &trans      &trans     &to 0
+&trans    &trans       &trans                                                                   &trans     &trans        &trans
+&trans    &trans       &trans    &trans         &trans                      &trans  &trans      &trans     &trans        &trans
             >;
         };
 
@@ -108,7 +108,7 @@
 &kp ASTRK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                              &kp ESCAPE  &none        &kp UP    &none          &none
 &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                             &kp HOME    &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
 &kp COLON  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL                             &none       &kp PAGE_UP  &none     &kp PAGE_DOWN  &none
-&kp F4     &kp KP_NUMBER_0  &kp KP_DOT       &kp LC(C)        &kp LC(V)  &kp DELETE  &kp BACKSPACE  &kp ENTER   &kp TAB      &none     &none          &to 0
+&kp F4     &kp KP_NUMBER_0  &kp KP_DOT       &kp LC(C)        &kp LC(V)  &kp DELETE  &kp BACKSPACE  &kp ENTER   &kp TAB      &none     &none          &none
            &to 0            &trans           &trans           &trans     &trans      &trans         &trans      &trans       &trans    &to 0
 &trans     &trans           &trans                                                                                           &trans    &trans         &trans
 &trans     &trans           &trans           &trans           &trans                                &trans      &trans       &trans    &trans         &trans
@@ -123,7 +123,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-              &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+              &to 0         &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &to 0
 &trans        &trans        &trans                                                                    &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans
             >;
