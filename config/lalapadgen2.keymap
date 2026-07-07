@@ -57,7 +57,7 @@
 
     combos { compatible = "zmk,combos"; };
 
-  s  keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         Default {
