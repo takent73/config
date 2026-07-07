@@ -12,17 +12,12 @@
 #define Numpad    4
 #define System    5
 
-tapping-term-ms = <150>;
-         flavor = "balanced";};
- 
-         flavor = "balanced";
+&mt { quick-tap-ms = <200>; };
 
-tapping-term-ms {
-    = <150>;};
+&lt { quick-tap-ms = <200>; };
 
-/
-
-    behaviors {
+/ {
+    behaviors s{
         zip_dyn_scale: zip_dyn_scale {
             compatible = "zmk,behavior-zip-dynamic-scale";
             #binding-cells = <2>;
