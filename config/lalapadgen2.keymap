@@ -12,6 +12,18 @@
 #define Numpad    4
 #define System    5
 
+&mt { 
+    tapping-term-ms = <300>;
+    flavor = "balanced";
+    retro tap;
+}
+
+&lt { 
+    tapping-term-ms = <300>;
+    flavor = "balanced";
+    retro tap;
+}
+
 / {
 
     behaviors {
