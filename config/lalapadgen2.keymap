@@ -12,11 +12,16 @@
 #define Numpad    4
 #define System    5
 
-&mt { quick-tap-ms = <200>; };
+tapping-term-ms = <150>;
+         flavor = "balanced";};
+ 
+         flavor = "balanced";
 
-&lt { quick-tap-ms = <200>; };
+tapping-term-ms {
+    = <150>;};
 
-/ {
+/
+
     behaviors {
         zip_dyn_scale: zip_dyn_scale {
             compatible = "zmk,behavior-zip-dynamic-scale";
@@ -31,8 +36,8 @@
         mt2: mod_tap2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
@@ -54,26 +59,26 @@
         Default {
             display-name = "Default";
             bindings = <
-&kp Q      &kp W           &kp E        &kp R             &kp T                                &kp Y          &kp U             &kp I          &kp O           &kp P
-&kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                &kp H          &mt LEFT_SHIFT J  &mt LCTRL K    &mt LEFT_ALT L  &kp MINUS
-&kp Z      &kp X           &kp C        &kp V             &kp B                                &kp N          &kp M             &kp COMMA      &kp PERIOD      &kp SLASH
-&kp LCTRL  &kp TAB         &lt 1 DEL    &mo 3             &kp SPACE  &kp SPACE  &kp BACKSPACE  &kp BACKSPACE  &lt 2 ENTER       &kp LANG2      &kp LEFT_GUI    &kp ESC
-           &to 3           &kp RIGHT    &kp DOWN          &kp LEFT   &kp UP     &kp LG(UP)     &kp LG(LEFT)   &kp DOWN          &kp LG(RIGHT)  &to 4
-&mkp LCLK  &mkp RCLK       &mkp MCLK                                                                                            &mkp LCLK      &mkp RCLK       &mkp MCLK
-&mkp MB5   &mkp MB4        &kp LG(TAB)  &kp LG(D)         &kp LCTRL                            &mkp MB5       &mkp MB4          &kp LG(TAB)    &kp LG(D)       &kp LCTRL
+&kp Q      &kp W           &kp E        &kp R             &kp T                                &kp Y         &kp U             &kp I          &kp O           &kp P
+&kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                &kp H         &mt LEFT_SHIFT J  &mt LCTRL K    &mt LEFT_ALT L  &kp MINUS
+&kp Z      &kp X           &kp C        &kp V             &kp B                                &kp N         &kp M             &kp COMMA      &kp PERIOD      &kp SLASH
+&kp LCTRL  &kp TAB         &none        &lt 1 DEL         &mo 3      &kp SPACE  &kp BACKSPACE  &lt 2 ENTER   &lt 2 LANG2       &none          &kp LEFT_GUI    &kp ESC
+           &to 3           &kp RIGHT    &kp DOWN          &kp LEFT   &kp UP     &kp LG(UP)     &kp LG(LEFT)  &kp DOWN          &kp LG(RIGHT)  &to 4
+&mkp LCLK  &mkp RCLK       &mkp MCLK                                                                                           &mkp LCLK      &mkp RCLK       &mkp MCLK
+&mkp MB5   &mkp MB4        &kp LG(TAB)  &kp LG(D)         &kp LCTRL                            &mkp MB5      &mkp MB4          &kp LG(TAB)    &kp LG(D)       &kp LCTRL
             >;
         };
 
         Number {
             display-name = "Number";
             bindings = <
-&kp F1           &kp F2           &kp F3           &kp F4           &kp F5                           &kp F6           &kp F7           &kp F8           &kp F9           &kp F10
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&none            &kp EQUAL        &kp KP_PLUS      &kp KP_MINUS     &none                            &none            &kp KP_ASTERISK  &kp KP_SLASH     &kp KP_DOT       &none
-&none            &kp LSHIFT       &none            &mo 5            &to 3            &none   &none   &kp DEL          &kp ENTER        &kp LANG1        &kp LCTRL        &kp LEFT_ALT
-                 &trans           &trans           &trans           &trans           &trans  &trans  &trans           &trans           &trans           &trans
-&trans           &trans           &trans                                                                                               &trans           &trans           &trans
-&trans           &trans           &trans           &trans           &trans                           &trans           &trans           &trans           &trans           &trans
+&kp F1           &kp F2           &kp F3           &kp F4           &kp F5                            &kp F6           &kp F7           &kp F8           &kp F9           &kp F10
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                   &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&none            &kp EQUAL        &kp KP_PLUS      &kp KP_MINUS     &none                             &none            &kp KP_ASTERISK  &kp KP_SLASH     &kp KP_DOT       &none
+&none            &kp LSHIFT       &none            &none            &mo 5            &none   &kp DEL  &kp ENTER        &kp LANG1        &none            &kp LCTRL        &kp LEFT_ALT
+                 &trans           &trans           &trans           &trans           &trans  &trans   &trans           &trans           &trans           &trans
+&trans           &trans           &trans                                                                                                &trans           &trans           &trans
+&trans           &trans           &trans           &trans           &trans                            &trans           &trans           &trans           &trans           &trans
             >;
         };
 
@@ -96,7 +101,7 @@
 &kp ESC   &none        &kp UP    &none          &none                       &none   &kp CAPS    &none      &none         &none
 &kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END                     &none   &kp LSHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
 &none     &kp PAGE_UP  &none     &kp PAGE_DOWN  &none                       &none   &none       &none      &none         &none
-&none     &none        &none     &kp LEFT_ALT   &kp DEL  &kp ENTER  &none   &none   &none       &kp LANG1  &none         &none
+&none     &none        &none     &kp LEFT_ALT   &kp DEL  &kp ENTER  &none   &none   &kp LANG1   &none      &none         &none
           &to 0        &trans    &trans         &trans   &trans     &trans  &trans  &trans      &trans     &to 0
 &trans    &trans       &trans                                                                   &trans     &trans        &trans
 &trans    &trans       &trans    &trans         &trans                      &trans  &trans      &trans     &trans        &trans
