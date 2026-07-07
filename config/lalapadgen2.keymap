@@ -12,11 +12,18 @@
 #define Numpad    4
 #define System    5
 
-&mt { quick-tap-ms = <200>; };
+flavor = "balanced";
+         tapping-term-ms = <300>;
+         retro-tap;};
+ 
+         flavor = "balanced";
+         tapping-term-ms = <300>;
 
-&lt { quick-tap-ms = <200>; };
+retro-tap {
+    ;};
 
-/ {
+/
+
     behaviors {
         zip_dyn_scale: zip_dyn_scale {
             compatible = "zmk,behavior-zip-dynamic-scale";
@@ -32,7 +39,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
