@@ -12,17 +12,7 @@
 #define Numpad    4
 #define System    5
 
-flavor = "balanced";
-         tapping-term-ms = <300>;
-         retro-tap;};
- 
-         flavor = "balanced";
-         tapping-term-ms = <300>;
-
-retro-tap {
-    ;};
-
-/
+/ {
 
     behaviors {
         zip_dyn_scale: zip_dyn_scale {
@@ -55,7 +45,7 @@ retro-tap {
 
     combos { compatible = "zmk,combos"; };
 
-    keymap {
+  s  keymap {
         compatible = "zmk,keymap";
 
         Default {
