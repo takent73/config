@@ -12,20 +12,25 @@
 #define Numpad    4
 #define System    5
 
-&mt { 
-    tapping-term-ms = <300>;
+&mt {
+    tapping-term-ms = <275>;
     flavor = "balanced";
     retro-tap;
+    require-prior-idle-ms = <150>;
+    quick-tap-ms = <175>;
+    hold-trigger-on-release;
 };
 
-&lt { 
-    tapping-term-ms = <300>;
+&lt {
+    tapping-term-ms = <275>;
     flavor = "balanced";
     retro-tap;
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-on-release;
 };
 
 / {
-
     behaviors {
         zip_dyn_scale: zip_dyn_scale {
             compatible = "zmk,behavior-zip-dynamic-scale";
